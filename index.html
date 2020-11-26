@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,18 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
+
 <body>
     <!-- <h1 style="color: red;">Welcome To Shrey's Component library METHD 2</h1> -->
 
     <h1 id="Lib">Welcome To Shrey's Component library</h1>
-    <p>I am attending neog.camp and I want to make a library which would make all my projects look good and consistent </p>
+    <p>I am attending neog.camp and I want to make a library which would make all my projects look good and consistent
+    </p>
 
     <hr>
 
     <h2>@typography</h2>
+
     <h1>This is H1 or Biggest heading</h1>
     <h2>This is H2 or Second Biggest heading</h2>
     <h3>This is H3 heading</h3>
@@ -29,61 +33,78 @@
 
     <h2>@Containers</h2>
 
-    <h3>@fluid Containers</h3>
-    <div>This is the Fluid Container and it will go to full width of page with some margin.</div>
+    <h3>fluid Containers</h3>
+
+    <div class="container ">This is the Fluid Container and it will go to full width of page with some margin.</div>
 
     <h3>Center Container</h3>
-    <div>This is the Center Container and it will go to full width of page with some margin.</div>
+    <div class="container container-center ">This is the Center Container and it will go to full width of page with some
+        margin.</div>
 
 
     <h2>@links</h2>
 
-        <a href="/">Primary Links</a>
-        <a href="https://neog.camp/guide/lesson-three">Secondary Links</a>
-        <a href="https://www.w3schools.com/html/html_blocks.asp">Inline and Block Elemenst</a>
+
+    <a class="link primary-link" href="https://neog.camp/guide/lesson-three">Secondary Links</a>
+
+
+    <a class="link secondary-link" href="https://www.w3schools.com/html/html_blocks.asp">Inline and Block Elemenst</a>
 
 
     <h2>@Lists</h2>
-    <ul>
+
+    <ul class="list-non-bullet">
+        <li>A</li>
+        <li>A</li>
+        <li>A</li>
+
+    </ul>
+    <h3>Unordered Inline List</h3>
+
+    <ul class="list-item-inline">
         <li>Inline Item 1</li>
         <li>Inline Item 2</li>
         <li>Inline Item 3</li>
-      
+
     </ul>
+    <hr>
 
     <h3>Reverse Order List</h3>
-    <ol>
+    <ol reversed>
         <li>A</li>
         <li>B</li>
         <li>C</li>
-      
+
     </ol>
 
     <h2>@navs</h2>
 
-    <p>Navigation is Used to </p>
-    <nav>
-        <div>I am Brand</div>
-        <ul>
-            
-            <li>
-                <a href="/">Hme</a>
+    <p>Navigation is Used to provide various options to users</p>
+
+    <nav class="navigation">
+
+        <div class="nav-brand">I am a Brand</div>
+
+        <ul class="nav-pills">
+
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            
-            <li>
-                <a href="/">Products</a>
+
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Products</a>
             </li>
-            <li>
-                <a href="">About</a>
+            <li class="list-item-inline">
+                <a class="link link-active" href="">About</a>
             </li>
         </ul>
     </nav>
 
 
     <h2>@Header</h2>
-    <header>
-        <img src="/dev.svg" alt="">
-        <h1>heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="/dev.svg" alt="">
+        <h1 class="hero-heading">Addaersdh Abdsl</h1>
         <img src="https://cdn.pixabay.com/photo/2015/03/26/09/47/sky-690293_1280.jpg" alt="">
         <ul>
             <li>Unsplash</li>
@@ -92,26 +113,38 @@
         </ul>
     </header>
 
+
+
     <h2>@Section</h2>
-    <section>
+    <section class="section">
+        <div class="container container-center"></div>
         <h3>Fluid section</h3>
-        <p>This will go end to end with little margin</p>
+        <p>This will go end to end with little margin with white background</p>
     </section>
-    <section>
+
+    <section class="section ow">
+        <div class="container container-center"></div>
         <h3>White section</h3>
-        <p>This will have white background</p>
+        <p>This will haveoff white background</p>
     </section>
 
     <H2>@Footer</H2>
-    <footer>
+
+    <footer class="footer ">
         <!--//h1 and h2 are not to be used in footer-->
-        <ul>
-            <li>social1</li>
-            <li>social2</li>
-            <li>social3</li>
-                       
+        <div class="footer-header">Some small heading inside footer</div>
+        <ul class="social-links">
+
+            <li class="list-item-inline"><a class="link" href="/">social1</a></li>
+
+            <li class="list-item-inline"><a class="link" href="/">social2</a></li>
+
+            <li class="list-item-inline"><a class="link" href="/">social3</a></li>
+
 
         </ul>
+
     </footer>
 </body>
+
 </html>
